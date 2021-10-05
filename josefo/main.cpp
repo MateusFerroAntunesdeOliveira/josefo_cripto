@@ -1,5 +1,6 @@
 #include <iostream>
 #include "listaCircular.h"
+#include "listaCircular.cpp"
 
 using namespace std;
 
