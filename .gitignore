@@ -39,3 +39,11 @@ josefo/josefo.vcxproj.filters
 josefo/.vs/josefo/v16/Browse.VC.opendb
 josefo/.vs/josefo/v16/ipch/AutoPCH/7b53bb505459d2c/LISTACIRCULAR.ipch
 josefo/.vs/josefo/v16/ipch/AutoPCH/12b5c6b581ea95d/MAIN.ipch
+josefo/.vs/josefo/v16/.suo
+*.recipe
+*.tlog
+*.pdb
+josefo/Debug/josefo.ilk
+josefo/Debug/vc142.idb
+josefo/Debug/josefo.vcxproj.FileListAbsolute.txt
+josefo/Debug/josefo.log

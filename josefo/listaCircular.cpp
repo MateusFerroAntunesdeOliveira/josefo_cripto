@@ -38,6 +38,7 @@ TipoDado Lista::remove() {
 		if (numnos == 0) lista = nullptr;
 	}
 	else cerr << "lista vazia!" << endl;
+	return aux;
 }
 
 unsigned int Lista::tam() const { return numnos; }
