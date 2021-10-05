@@ -30,3 +30,10 @@
 *.exe
 *.out
 *.app
+*.db
+josefo/.vs/josefo/v16/Browse.VC.db-shm
+josefo/.vs/josefo/v16/Browse.VC.db-wal
+josefo/josefo.vcxproj.user
+josefo/josefo.vcxproj
+josefo/josefo.vcxproj.filters
+josefo/.vs/josefo/v16/Browse.VC.opendb
