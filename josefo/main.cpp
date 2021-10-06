@@ -27,7 +27,7 @@ int main() {
 	cout << "\nLista Original: " << endl;
 	lista.imprime();
 
-	// -> Criptografa os valores e imprime a lista criptografada
+	//-> Criptografa os valores e imprime a lista criptografada
 	cout << "\nCriptografada: " << endl;
 	while (!lista.vazia()) {
 		for (int i = 0; i < m - 1; ++i)	lista.insere(lista.remove());
@@ -35,6 +35,9 @@ int main() {
 	}
 	cout << endl << endl;
 
-	//TODO Transformar em .jcripto
+	//-> Envia a lista criptografada para um arquivo .jcripto
+	ofstream jcriptoFile("arq.jcripto");
+	// ....
+
 	//TODO Restaurar o arquivo original (fazer a descriptografia)
 }
