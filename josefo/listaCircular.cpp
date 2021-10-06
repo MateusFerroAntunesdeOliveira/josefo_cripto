@@ -9,7 +9,7 @@ Lista::Lista() {
 }
 
 Lista::~Lista() {
-	cout << "Deletando memoria da lista" << endl;
+	cout << "Deletando memoria da lista..." << endl << endl;
 	while (!vazia()) { cout << remove() << endl; }
 }
 

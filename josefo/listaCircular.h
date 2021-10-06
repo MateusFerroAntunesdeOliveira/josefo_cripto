@@ -3,7 +3,7 @@
 
 #include <string>
 
-using TipoDado = char;        //typedef char TipoDado;
+using TipoDado = char;
 
 struct No {
     TipoDado info;
