@@ -5,13 +5,29 @@
 using namespace std;
 
 int main() {
-	Lista a;
+	Lista lista;
+	int n;
 
-	a.insere('A');
-	a.insere('B');
-	a.insere('C');
+	lista.insere('A');
+	lista.insere('B');
+	lista.insere('C');
+	lista.insere('D');
+	lista.insere('E');
+	lista.insere('F');
+	lista.insere('G');
 
-	a.imprime();
+	cout << "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=";
+	cout << "\nQual a frequencia de remocao (ex: 3, vai removendo 3 em 3): "; 
+	cin >> n;
+	cout << "\nLista Original: " << endl;
+	lista.imprime();
+	cout << "\nCriptografada: " << endl;
 
-	cout << a.remove() << endl;
+	while (!lista.vazia()) {
+		for (int i = 0; i < n - 1; ++i) {
+			lista.insere(lista.remove());
+		}
+		cout << lista.remove() << " ";
+	}
+	cout << endl << endl;
 }

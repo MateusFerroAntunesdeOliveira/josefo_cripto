@@ -49,7 +49,7 @@ void Lista::imprime() const {
 	No* tmp = lista->prox;
 	if (!vazia()) {
 		while (tmp != lista) {
-			cout << tmp->info << ", ";
+			cout << tmp->info << " ";
 			tmp = tmp->prox;
 		}
 	}
