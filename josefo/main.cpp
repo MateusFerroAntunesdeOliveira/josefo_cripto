@@ -6,7 +6,7 @@ using namespace std;
 
 int main() {
 	Lista lista;
-	int n;
+	int m;
 
 	lista.insere('A');
 	lista.insere('B');
@@ -18,16 +18,20 @@ int main() {
 
 	cout << "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=";
 	cout << "\nQual a frequencia de remocao (ex: 3, vai removendo 3 em 3): "; 
-	cin >> n;
+	cin >> m;
 	cout << "\nLista Original: " << endl;
 	lista.imprime();
 	cout << "\nCriptografada: " << endl;
 
 	while (!lista.vazia()) {
-		for (int i = 0; i < n - 1; ++i) {
+		for (int i = 0; i < m - 1; ++i) {
 			lista.insere(lista.remove());
 		}
 		cout << lista.remove() << " ";
 	}
 	cout << endl << endl;
+
+	//TODO Restaurar o arquivo original (fazer a descriptografia)
+	//TODO Ler do usuario um .txt e um numero M
+	//TODO Transformar em .jcripto
 }
