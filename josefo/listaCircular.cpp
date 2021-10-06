@@ -9,8 +9,8 @@ Lista::Lista() {
 }
 
 Lista::~Lista() {
-	cout << "Deletando memoria da lista..." << endl << endl;
-	while (!vazia()) { cout << remove() << endl; }
+	cout << "Deletando memoria da lista... ";
+	while (!vazia()) { cout << remove() << " "; }
 }
 
 void Lista::insere(TipoDado x) {
@@ -50,6 +50,7 @@ void Lista::imprime() const {
 	if (!vazia()) {
 		while (tmp != lista) {
 			cout << tmp->info << " ";
+			// cout << tmp->info;
 			tmp = tmp->prox;
 		}
 	}
