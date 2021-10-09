@@ -46,6 +46,4 @@ int main() {
 		jcriptoFile << c << "\n";
 	}
 	jcriptoFile.close();
-	
-	//TODO Restaurar o arquivo original (fazer a descriptografia)
 }
