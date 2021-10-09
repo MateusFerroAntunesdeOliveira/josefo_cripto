@@ -8,7 +8,7 @@ using namespace std;
 
 int main() {
 	//-> Declaracoes
-	Lista lista;
+	Lista lista, lista2;
 	int m;
 	char ch;
 	string nome_arquivo;
@@ -33,15 +33,19 @@ int main() {
 		for (int i = 0; i < m - 1; ++i)	{
 			lista.insere(lista.remove());
 		}
-		cout << lista.remove() << " ";
+		lista2.insere(lista.remove());
 	}
-	cout << endl << endl;
+	lista2.imprime();
+	cout << endl;
 
 	//-> Envia a lista criptografada para um arquivo .jcripto
 	ofstream jcriptoFile("arq.jcripto");
-	TipoDado c = lista.remove();
-	jcriptoFile << c;
+	TipoDado c;
+	while (!lista2.vazia()) {
+		c = lista2.remove();
+		jcriptoFile << c << "\n";
+	}
 	jcriptoFile.close();
-
+	
 	//TODO Restaurar o arquivo original (fazer a descriptografia)
 }
